@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+           CV Data Entry Form
+        </title>
+    </head>
+    <body>
+        <h1>CV Data Entry Form</h1><hr>
+        <form method="post" action="/submit">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location"><br><br>
+                <label for="picture">Upload a profile picture</picture></label>
+                <input type="file" id="picture" name="picture"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Introduction</legend>
+                <label for="introducion">Write a short introducion about yourself:</label><br><br>
+                <textarea rows="5" cols="40"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="skills">Select your skills:</label><br> 
+                <input id="skills" name="skills" type="checkbox" value="html">HTML<br>
+                <input id="skills" name="skills" type="checkbox" value="css">CSS<br>
+                <input id="skills" name="skills" type="checkbox" value="js">Javascript<br>
+                 <input id="skills" name="skills" type="checkbox" value="react">React<br>
+                <input id="skills" name="skills" type="checkbox" value="node.js">Node.js<br>
+                <input id="skills" name="skills" type="checkbox" value="express">Express<br>
+                <input id="skills" name="skills" type="checkbox" value="git">Git<br>
+                <input id="skills" name="skills" type="checkbox" value="WPO">Web Performance Optimization<br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Experience</legend>
+                <label for="experience">Current position:</label>
+                <input type="text" id="experience" name="experience">
+                <br><br>
+                <label for="description">Describe your position</label>
+                <br><br>
+                <textarea rows="5" cols="45"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Education & Certification</legend>
+                <label for="degree">Degree</label>
+                <select id="degree"name="degree">
+                    <option value="primary_school">Primary School</option>
+                    <option value="high_school">High School</option>
+                    <option value="university">University</option>
+                    <option value="phd">PHD</option>
+                    <br><br>
+                </select>
+                <br>
+                <label for="Certification">Certification</label><br>
+                <textarea rows="5" cols="46"id="Certification"></textarea>             
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal projects</legend><br>
+                <label for="personal_projects">Describe your personal projects:</label><br><br>
+                <textarea rows="5" cols="46"></textarea>
+            </fieldset>
+
+            <label for="imagebutton">Submit:</label><br>
+            <button type="submit" id="submit">
+                <img src="download.jfif" height="10" width="15" value="Submit">
+            </button>   
+
+        </form>
+    </body>
+</html>
